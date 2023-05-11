@@ -1,0 +1,111 @@
+body {
+  background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp");
+  background-color: #cccccc;
+  background-size: contain;
+}
+#chatwrap{
+  background-color: #272b30;
+  padding-left:0px;
+}
+#main{
+  margin-left: -10px;
+  margin-right: -25px;
+}
+.nick-hover{
+  background-color: rgba(17,17,34,0.9);
+}
+#wrap {
+  padding: 0px;
+}
+#userlisttoggle{
+  padding-right: 5px;
+}
+#modflair{
+  margin-right: 5px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.form-control{
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+#footer{
+  display: none;
+}
+
+#chatwrap{
+  padding-right:3px;
+  margin-bottom:5px;
+}
+
+#videowrap{
+  padding-left:3px;
+  margin-bottom:5px;
+}
+
+#pollwrap {
+  padding-right: 5px;
+} 
+
+#leftcontrols {
+  position: relative; /* set leftcontrols to be the reference point for the absolute positioning of videocontrols */
+}
+
+#videocontrols {
+  top: 0;
+  right: calc(100% + 20px); /* set the right property to be the width of the leftcontrols plus 10px of margin */
+}
+
+#voteskip::before{
+  content: "Vote Skip";
+  padding: 2px;
+}
+
+#resize-video-smaller{
+  padding-right: 5px;
+}
+
+.server-msg-reconnect{
+  border-radius:5px;
+}
+
+#currenttitle{
+  padding-left: 5px;
+}
+
+#pollwrap > div {
+  margin-top: 5px;
+}
+
+.close.pull-right{
+  padding-left: 5px;
+}
+
+.well{
+  padding: 5px;
+}
+
+#pollwrap > div > h3 {
+  position: relative;
+  margin-top: 5px;
+  width: 80%;
+}
