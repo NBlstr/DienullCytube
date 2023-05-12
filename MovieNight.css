@@ -1,7 +1,11 @@
+html{
+  background-image: none;
+  background-color: transparent;
+}
 body {
-  background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp");
-  background-color: #cccccc;
-  background-size: contain;
+ background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp");
+ background-color: #cccccc;
+ background-size: contain;
 }
 #chatwrap{
   background-color: #272b30;
