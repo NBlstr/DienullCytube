@@ -1,6 +1,6 @@
 html{
-  background-image: none;
-  background-color: transparent;
+  background-image: none !important;
+  background-color: transparent !important;
 }
 body {
  background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp");
