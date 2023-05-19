@@ -3,17 +3,26 @@ html{ /* movienight's background is scuffed and fucks with the kf background. th
   background-color: transparent !important;
 }
 body {
- background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp"); /* kf background image */
+ background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp");  /* kf background image */
  background-color: #272b30; /* grey background, incase anyone insists the background image needs to go */ 
  background-size: contain; 
+ background-blend-mode: color-dodge;
+}
+
+#controlsrow{
+ padding-top: 5px;
+ padding-left: 15px;
+ background-color: #272b30;
+ padding-bottom: 25px;;
 }
 
 #main{ 
-  margin-left: -5px;
-  margin-right: -25px;
+  padding-top: 30px; /*the amount of grey about the chat/movie */
+  /*margin-left: 0px;*/
+  padding-left: 10px;
+  margin-right: -15px;
+  background-color: #272b30;
 }
-
-
 
 .nick-hover{
   background-color: rgba(17,17,34,0.9);
@@ -58,13 +67,13 @@ body {
 
 #chatwrap{ /* add color to chat so the background doesn't show through */
   background-color: #272b30; 
-  padding-left:0px;
-  padding-right:3px;
-  margin-bottom:5px;
+  padding-left: 5px;
+  padding-right: 8px;
+  margin-bottom: 5px;
 }
 
 #videowrap{
-  padding-left:5px;
+  padding-left:20px;
   margin-bottom:5px;
 }
 
@@ -74,13 +83,21 @@ body {
 
 #leftcontrols {
   position: relative; /* set leftcontrols to be the reference point for the absolute positioning of videocontrols */
+  padding-left: 0px;
+}
+
+@media (pointer: fine) { 
+  #videocontrols {
+    top: 0;
+    right: calc(100% + 26px); /* this is the part that moves the voteskip under chat for blind people */
+  }
+  #plcontrol{
+   padding-left: 2px;
+  }
+
 }
 
 
-#videocontrols {
-  top: 0;
-  right: calc(100% + 10px); /* this is the part that moves the voteskip under chat for blind people */
-}
 
 
 #voteskip::before{
@@ -92,7 +109,7 @@ body {
   padding-right: 5px;
 }
 
-.server-msg-reconnect{ /* makes the reconnect message pretty uwu */
+[class^="server-msg-"] { /* makes the server messages pretty uwu */
   border-radius:5px;
 }
 
@@ -100,8 +117,9 @@ body {
   padding-left: 5px;
 }
 
-#pollwrap > div { /* reduce space between the poll and the chat. i'm hopping this will make polls easier for people to notice. */
-  margin-top: 5px;
+#pollwrap > div { 
+  margin-top: 5px; /* reduce space between the poll and the chat. i'm hopping this will make polls easier for people to notice. */
+  padding-left: 15px; 
 }
 
 .close.pull-right{
